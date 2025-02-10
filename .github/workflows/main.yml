@@ -1,4 +1,4 @@
- name: Deploy to Mangeot server
+name: Deploy to Mangeot server
 
 on:
   push:
