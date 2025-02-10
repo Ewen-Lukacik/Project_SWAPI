@@ -26,10 +26,10 @@ export default function RootLayout({
             <ul>
               <li><Link href="/people">People</Link></li>
               <li><Link href="/planets">Planets</Link></li>
-              <li><a href="/films">Films</a></li>
-              <li><a href="/species">Species</a></li>
-              <li><a href="/vehicles">Vehicles</a></li>
-              <li><a href="/starships">Starships</a></li>
+              <li><Link href="/films">Movies</Link></li>
+              <li><Link href="/species">Species</Link></li>
+              <li><Link href="/vehicles">Vehicles</Link></li>
+              <li><Link href="/starships">Starships</Link></li>
             </ul>
           </nav>
         </header>
