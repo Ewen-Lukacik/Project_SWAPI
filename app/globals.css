@@ -1,0 +1,285 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* /app/globals.css */
+
+/* *{
+  border: 1px solid red;
+
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+header {
+  background-color: #222;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  color: white;
+}
+
+nav ul li a:hover{
+  transform: scale(1.3);
+  color: #ffdf00;
+  text-decoration: underline;
+}
+
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+  width: 100%;
+  bottom: 0;
+}
+
+ul, li{
+  list-style: none;
+  scrollbar-width: none;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centre les éléments horizontalement */
+  gap: 1rem; /* Ajoute un espace entre les éléments */
+  margin-bottom: 5rem;
+}
+
+
+.container-detail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+
+/*
+.container-detail *{
+   outline: 1px solid red; 
+}*/
+
+.cardbox{
+  background-color: #222;
+  width: 15rem;
+  height: 25rem;
+  display: flex;
+  border-radius: 3rem;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cardbox img {
+  width: 100%;        
+  height: 100%;     
+  object-fit: contain;  
+  overflow: hidden;
+  /* opacity: .2; /* debug */
+  border-radius: 3rem 3rem 0 0;
+ 
+}
+
+
+
+
+
+
+
+
+
+/*************STYLE PAGE FILM INDICIDUEL*******************************/
+
+
+.cardbox-detail{
+  /* border: 1px solid red; */
+  background-color: #222;
+  width: 25rem;
+  height: 30rem;
+  display: flex;
+  border-radius: 3rem;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.cardbox-detail img{
+  width: 100%;        
+  height: 100%;     
+  object-fit: contain;  
+  overflow: hidden;
+  border-radius: 3rem ;
+}
+
+
+
+
+.movie-detail {
+  width: 30rem;           
+  height: 20rem;
+  line-height: 2.3rem;
+  background-color: #222;
+  /* border-radius: 0 3rem 3rem 0; */
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;        
+}
+
+
+/* OPENING A LA STAR WARS  */
+.crawl-cardbox{
+  /* border: 1px solid red; */
+  position: relative;
+  background-color: #222;
+  width: 25vw;
+  height: 30rem;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  /* margin: 5rem auto 5rem auto; */
+  background-image: url("https://jxmo.io/img/star-wars-crawl/background.png");
+}
+
+.opening_crawl {
+  position: relative;
+  height: 500px; 
+  overflow: hidden; 
+  perspective: 400px; 
+  z-index: 1000;
+  width: 100%;
+
+}
+
+.crawl_content {
+  /* position: absolute; */
+  top: 100%;
+  width: 100%;
+  animation: crawl 45s linear infinite; 
+}
+
+.crawl_content p {
+  font-size: 1.5rem; 
+  line-height: 3.5rem; 
+  text-align: justify;
+  color: #ffdf00; 
+  transform: rotateX(20deg) scale(1); 
+ 
+  /* outline: 1px solid red; */
+}
+
+@keyframes crawl {
+  0% {
+    transform: rotateX(20deg) translateY(30%) scale(1); /* Le texte commence au niveau du bas */
+  }
+  100% {
+    transform: rotateX(20deg) translateY(-115%) scale(0.4); /* Le texte monte et rétrécit, créant un effet de cône */
+  }
+}
+
+
+
+
+
+
+
+
+/********  SLIDER   ************/
+.slider {
+  text-align: center;
+  padding: 20px;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+}
+
+.slider-item {
+  width: 150px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d1e7dd; /* Placeholder pour la couleur de fond */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.slider-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.slider-item p {
+  background-color: #2d6a4f; /* Placeholder pour la couleur de fond du nom */
+  color: white;
+  padding: 4px;
+  margin-top: 8px;
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #2d6a4f; /* Couleur des boutons */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1b4332;
+}
+
+
+.character-name{
+  background-color: #222;
+  border: #ffdf00;
+}
