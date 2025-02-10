@@ -1,6 +1,7 @@
 "use client";
 import imagespecies from "@/app/images.json";
 import { Species } from "@/types/species";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const speciesPage = () => {
@@ -52,7 +53,7 @@ const speciesPage = () => {
             <section>
                 <div className="container flex flex-wrap justify-center">
                     {species.map((species, index) => (
-                        <a href={`/speciess/${species.url.split('/')[5]}`} key={index}>
+                        <Link href={`/speciess/${species.url.split('/')[5]}`} key={index}>
                             <div className="cardbox bg-slate-200 m-10 w-64 min-h-48 rounded-lg flex flex-col">
                                 <img 
                                     src={currentImages[index] || "default_image_url.jpg"} 
@@ -62,7 +63,7 @@ const speciesPage = () => {
                                     <h1 className="text-gray-200 text-xl mb-4">{species.name}</h1>
                                 </div>
                             </div>
-                        </a>
+                        </Link>
                     ))}
                 </div>
 

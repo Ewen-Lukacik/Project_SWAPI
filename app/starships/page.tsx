@@ -1,6 +1,7 @@
 "use client";
 import imagePeople from "@/app/images.json";
 import { Starships } from "@/types/starship";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const peoplePage = () => {
@@ -52,7 +53,7 @@ const peoplePage = () => {
             <section>
                 <div className="container flex flex-wrap justify-center">
                     {people.map((starship, index) => (
-                        <a href={`/starships/${starship.url.split('/')[5]}`} key={index}>
+                        <Link href={`/starships/${starship.url.split('/')[5]}`} key={index}>
                             <div className="cardbox bg-slate-200 m-10 w-64 min-h-48 rounded-lg flex flex-col">
                                 <img 
                                     src={currentImages[index] || "default_image_url.jpg"} 
@@ -62,7 +63,7 @@ const peoplePage = () => {
                                     <h1 className="text-gray-200 text-xl mb-4">{starship.name}</h1>
                                 </div>
                             </div>
-                        </a>
+                        </Link>
                     ))}
                 </div>
 

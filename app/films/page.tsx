@@ -1,6 +1,7 @@
 "use client"; //definir la page comme coté client --> sinon ça marche pas car par défaut corté serveur
 import imageMovies from "@/app/images.json";
 import { Film } from "@/types/films";
+import Link from "next/link";
 import { Suspense, useEffect, useState } from "react";
 
 const filmPage = () => {
@@ -32,14 +33,14 @@ const filmPage = () => {
             <Suspense> 
             <div className="container flex flex-wrap justify-center">
               {film.map((film, index) => ( 
-                <a href={`/films/${film.url.split('/')[5]}`}>
+                <Link href={`/films/${film.url.split('/')[5]}`}>
                   <div key={index} className="cardbox bg-slate-200 m-10 w-64 min-h-48 rounded-lg flex flex-col ">
                     <img src={image[index]} alt="" />
                     <div className="flex flex-col items-center pt-4 pb-4">
                       <h1 className="text-gray-200 text-xl mb-4 ">{film.title}</h1>                   
                     </div>
                   </div>
-                </a>
+                </Link>
               ))}
             </div>
             </Suspense>
