@@ -24,11 +24,11 @@ export default function RootLayout({
           <nav>
             <ul>
               <li><a className="zoom" href="/people">People</a></li>
-              <li><a href="lukacike/planets">Planets</a></li>
-              <li><a href="lukacike/films">Films</a></li>
-              <li><a href="lukacike/species">Species</a></li>
-              <li><a href="lukacike/vehicles">Vehicles</a></li>
-              <li><a href="lukacike/starships">Starships</a></li>
+              <li><a href="/planets">Planets</a></li>
+              <li><a href="/films">Films</a></li>
+              <li><a href="/species">Species</a></li>
+              <li><a href="/vehicles">Vehicles</a></li>
+              <li><a href="/starships">Starships</a></li>
             </ul>
           </nav>
         </header>
