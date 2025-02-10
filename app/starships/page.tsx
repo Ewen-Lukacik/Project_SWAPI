@@ -52,7 +52,7 @@ const peoplePage = () => {
             <section>
                 <div className="container flex flex-wrap justify-center">
                     {people.map((starship, index) => (
-                        <a href={`lukacike/starships/${starship.url.split('/')[5]}`} key={index}>
+                        <a href={`/starships/${starship.url.split('/')[5]}`} key={index}>
                             <div className="cardbox bg-slate-200 m-10 w-64 min-h-48 rounded-lg flex flex-col">
                                 <img 
                                     src={currentImages[index] || "default_image_url.jpg"} 
