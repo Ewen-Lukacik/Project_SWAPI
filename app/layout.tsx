@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import Link from "next/link";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -23,8 +24,8 @@ export default function RootLayout({
         <header>
           <nav>
             <ul>
-              <li><a className="zoom" href="/people">People</a></li>
-              <li><a href="/planets">Planets</a></li>
+              <li><Link href="/lukacike/people">People</Link></li>
+              <li><Link href="/lukacike/planets">Planets</Link></li>
               <li><a href="/films">Films</a></li>
               <li><a href="/species">Species</a></li>
               <li><a href="/vehicles">Vehicles</a></li>
