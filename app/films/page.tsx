@@ -32,7 +32,7 @@ const filmPage = () => {
             <Suspense> 
             <div className="container flex flex-wrap justify-center">
               {film.map((film, index) => ( 
-                <a href={`/films/${film.url.split('/')[5]}`}>
+                <a href={`lukacike/films/${film.url.split('/')[5]}`}>
                   <div key={index} className="cardbox bg-slate-200 m-10 w-64 min-h-48 rounded-lg flex flex-col ">
                     <img src={image[index]} alt="" />
                     <div className="flex flex-col items-center pt-4 pb-4">
