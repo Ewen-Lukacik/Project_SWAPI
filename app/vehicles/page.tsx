@@ -49,7 +49,7 @@ const peoplePage = () => {
 
     return (
         <>
-            <h1 className="text-gray-200 flex justify-center text-2xl">Star Wars Vehicles</h1>
+            <h1 className="text-gray-200 flex justify-center text-2xl">Star Wars vehicles</h1>
             <section>
                 <div className="container flex flex-wrap justify-center">
                     {people.map((vehicle, index) => (
