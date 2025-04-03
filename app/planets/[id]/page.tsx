@@ -45,7 +45,7 @@ const PlanetPage = async ({ params }: { params: { id: string } }) => {
       </div>
 
       <br />
-      <h2 className="flex justify-center text-3xl">Notable people to live there : </h2>
+      <h2 className="flex justify-center text-3xl">Notable people from {planet.name} : </h2>
       <CharacterList title="" items={ResidentData} />
       <br />
 

@@ -47,11 +47,11 @@ const SpeciesPage = async ({ params }: { params: { id: string } }) => {
       </div>
 
       <br />
-      <h2 className="flex justify-center text-3xl">{species.name} appears in these movies : </h2>
+      <h2 className="flex justify-center text-3xl">You can find a {species.name} in the following movies : </h2>
       <CharacterList title="" items={movieData} />
   
       <br />
-      <h2 className="flex justify-center text-3xl">Notable members of this specie: </h2>
+      <h2 className="flex justify-center text-3xl">Notable members from this specie: </h2>
       <CharacterList title="" items={charactersData} />
   
 

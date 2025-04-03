@@ -53,7 +53,7 @@ const speciesPage = () => {
             <section>
                 <div className="container flex flex-wrap justify-center">
                     {species.map((species, index) => (
-                        <Link href={`/speciess/${species.url.split('/')[5]}`} key={index}>
+                        <Link href={`/species/${species.url.split('/')[5]}`} key={index}>
                             <div className="cardbox bg-slate-200 m-10 w-64 min-h-48 rounded-lg flex flex-col">
                                 <img 
                                     src={currentImages[index] || "default_image_url.jpg"} 
